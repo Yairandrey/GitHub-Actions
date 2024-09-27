@@ -22,7 +22,7 @@ jobs:
 
     other:
         runs-on: ubuntu-latest
-        needs: hola
+        needs: hola #Necesita que el job hola se ejecute primero
         steps:
             - name: Intento dos
               run : ls -al
