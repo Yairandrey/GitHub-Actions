@@ -1,10 +1,15 @@
 name: "Action mine"
 description: "Testing my action"
+inputs: 
+   message:
+    description: "Message to print"
+    required: true
+    default: "Hola programador"
 
 runs: 
   using: "composite"
 
   steps:
    - name: Inicio
-     run: echo "Inicio de Actions Rehusar"
+     run: echo " Hola ${{ inputs.message}}"
      shell: bash
