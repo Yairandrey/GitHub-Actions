@@ -4,6 +4,7 @@ name: My own action is called
 on: [push]
 
 jobs:
+    owm-action:
     runs-on: ubuntu-latest
     steps:
       - name: my action
