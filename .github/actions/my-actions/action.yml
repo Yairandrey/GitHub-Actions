@@ -7,3 +7,4 @@ runs:
   steps:
    - name: Inicio
      run: echo "Inicio de Actions Rehusar"
+     shell: bash
