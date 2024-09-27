@@ -1,0 +1,15 @@
+name: PHP
+
+on: [push]
+
+jobs:
+    php_builder:
+        runs-on: ubuntu-latest
+        steps:
+            - name: PHP
+              uses: shivammathur/setup-php@v2
+              with: #Con with defino y paso parámetros
+                php-version: '8.3'
+
+            - name: PHP Version
+              run: php --version
