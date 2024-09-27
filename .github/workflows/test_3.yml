@@ -1,0 +1,16 @@
+name: Node JS
+
+
+on : push
+
+
+jobs:
+    install_nodejs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup Node.js environment
+              uses: actions/setup-node@v4.0.4
+
+            - name: Node Version
+              run: node --version
+        
