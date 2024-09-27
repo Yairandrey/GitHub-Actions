@@ -1,0 +1,10 @@
+name: My own action is called
+
+
+on: [push]
+
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my action
+        uses: ./.github/actions/my-action

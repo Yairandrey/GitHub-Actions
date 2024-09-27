@@ -1,0 +1,9 @@
+name: "Action mine"
+description: "Testing my action"
+
+runs: 
+  using: "composite"
+
+  steps:
+   - name: Inicio
+     run: echo "Inicio de Actions Rehusar"
