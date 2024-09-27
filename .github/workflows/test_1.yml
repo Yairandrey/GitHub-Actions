@@ -29,8 +29,10 @@ jobs:
 
     other:
         runs-on: ubuntu-latest
-        needs: hola #Necesita que el job hola se ejecute primero
+        needs: [hola] #Necesita que el job hola se ejecute primero
         steps:
-            - name: Intento dos
+            - name: Checkout
+              uses: actions/checkout@v4.1.7
+            - name: LS
               run : ls -al
 
